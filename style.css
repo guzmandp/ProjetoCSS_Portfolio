@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Space+Mono";
+  font-weight: 400;
+}
+
+nav {
+  background: rgb(56, 54, 54) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+nav img {
+  margin-right: 9rem;
+  max-height: 4rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+}
+
+nav a:hover {
+  background-color: #fa8d0d;
+  border-radius: 0.4em;
+  color: #fff;
+  transition: color 0.6s;
+}
+.banner {
+  width: 100%;
+  height: 18rem;
+  display: flex;
+  padding: 0;
+}
+
+.foto {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.absolut {
+  position: absolute;
+  top: 300px;
+  left: 10%;
+}
+
+.midias {
+  padding-left: 15%;
+}
+
+.midias img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.midias > a {
+  text-decoration: none;
+}
+
+.meus__dados {
+  height: 650px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 40%;
+  background-color: #fa8d0d;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  padding-top: 30px;
+  text-align: right;
+  padding-right: 10%;
+  font-family: "Space+Mono";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.meus__dados h2 {
+  font-size: 1.7rem;
+  color: #fff;
+  padding-top: 30px;
+  text-align: right;
+  padding-right: 10%;
+  font-family: "Space+Mono";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.meus__dados h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 10%;
+  margin-top: 30px;
+  font-family: "Space+Mono";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.div__meusDados p {
+  height: 400px;
+  text-align: right;
+  line-height: 2.2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  padding-right: 10%;
+  margin-top: 30px;
+  font-family: "Space+Mono";
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.formacao {
+  background: rgb(247, 242, 242) 0% 0% no-repeat padding-box;
+  padding-left: 174px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+  padding-left: 20%;
+}
+
+.formacao h2 {
+  height: 120px;
+  text-align: left;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #fa8d0d;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  font-family: "Space+Mono";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.dados {
+  padding-left: 25px;
+}
+
+.ano__formacao {
+  height: 30px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fa8d0d;
+}
+
+.title__formacao {
+  height: 50px;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fa8d0d;
+}
+
+.text__formacao {
+  width: auto;
+  height: 80px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fa8d0d;
+}
+
+.experie {
+  width: 100%;
+  background: #fa8d0d 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.experie h2 {
+  width: 80%;
+  text-align: left;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.ano__experie {
+  height: 30px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.title__experie {
+  height: 50px;
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.text__experie {
+  width: auto;
+  height: 80px;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding-bottom: 100px;
+  padding-right: 65px;
+  color: #fff;
+}
+.container-contato {
+  background: rgb(247, 242, 242) 0% 0% no-repeat padding-box;
+  padding-left: 174px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+  padding-left: 20%;
+}
+
+.container__contatoDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title__contata {
+  height: 120px;
+  text-align: left;
+  font-size: 3rem;
+  letter-spacing: 0px;
+  font-weight: bold;
+  color: #fa8d0d;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  font-family: "Space+Mono";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+label {
+  color: #fa8d0d;
+  text-align: left;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  padding-top: 5px;
+}
+
+input {
+  height: 34px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #fa8d0d;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 398px;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+textarea {
+  width: 398px;
+  height: 133px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #fa8d0d;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 298px;
+}
+
+button {
+  background-color: rgb(56, 54, 54);
+  display: inline-block;
+  color: #fff;
+  border-radius: 0.4em;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fa8d0d;
+  border-radius: 0.4em;
+  border-style: none;
+  color: #fff;
+  transition: color 0.6s;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.container__midias2 {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.midias2 {
+  width: 45px;
+  height: 45px;
+}
+
+footer {
+  background: rgb(56, 54, 54) 0% 0% no-repeat padding-box;
+  width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__text {
+  color: #fa8d0d;
+}
