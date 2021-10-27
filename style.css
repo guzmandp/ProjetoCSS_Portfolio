@@ -43,6 +43,24 @@ nav a {
   padding: 0.5em 1.5em;
 }
 
+.btn__menu {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  width: 180px;
+}
+
+.btn__menu:hover {
+  display: inline-block;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  width: 180px;
+}
+
 nav a:hover {
   background-color: #fa8d0d;
   border-radius: 0.4em;
@@ -251,12 +269,6 @@ h1 {
   padding-left: 20%;
 }
 
-.container__contatoDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .title__contata {
   height: 120px;
   text-align: left;
@@ -269,6 +281,92 @@ h1 {
   font-family: "Space+Mono";
   font-weight: 700;
   letter-spacing: 2px;
+}
+.trabalhos {
+  width: 100%;
+  background: rgb(240, 234, 234) 0% 0% no-repeat padding-box;
+}
+
+.trabalhos h2 {
+  width: 80%;
+  text-align: left;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fa8d0d;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 20%;
+}
+
+.card__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box__section {
+  cursor: pointer;
+  padding: 20px;
+  width: 280px;
+}
+
+.img__cardBox {
+  width: 260px;
+  height: 190px;
+}
+
+.title__cardBox {
+  font-family: Yaldevi;
+  font-size: 32px;
+  color: #fa8d0d;
+  font-weight: 700;
+}
+
+.text__cardBox {
+  font-family: Yaldevi;
+  font-size: 12.5px;
+  color: #f28d2d;
+  font-size: 15px;
+}
+
+.contata {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container__contatoDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.div__textContata {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.subTitle__contata {
+  color: #f28d2d;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.div__textContata > p {
+  padding-top: 30px;
+  color: #f28d2d;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.div__formulario {
+  width: 50%;
 }
 
 label {
@@ -337,6 +435,7 @@ button:hover {
 }
 
 .container__midias2 {
+  width: 300px;
   display: flex;
   justify-content: space-around;
   padding-top: 25px;
@@ -359,4 +458,93 @@ footer {
 
 .footer__text {
   color: #fa8d0d;
+}
+
+@media (max-width: 768px) {
+  nav {
+    background: rgb(56, 54, 54) 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+
+  nav img {
+    margin-right: 1rem;
+    max-height: 2rem;
+    cursor: pointer;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-left: 0.2px;
+  }
+
+  nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    padding: 0.5em 1.5em;
+  }
+
+  .btn__menu {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    width: 180px;
+  }
+
+  .experie {
+    padding-left: 40px;
+    height: 1100px;
+  }
+
+  .formacao {
+    padding-left: 40px;
+  }
+
+  .meus__dados {
+    height: 800px;
+  }
+  .banner {
+    height: 14rem;
+  }
+  .foto {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .absolut {
+    position: absolute;
+    top: 250px;
+    left: 8%;
+  }
+  .midias {
+    padding-left: 10%;
+  }
+  .midias img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .contata {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 598px) {
 }
