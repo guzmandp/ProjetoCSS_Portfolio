@@ -2,10 +2,9 @@ var nome = document.getElementById("nome");
 var email = document.getElementById("email");
 var assunto = document.getElementById("assunto");
 var error = document.getElementById("error");
-error.style.color = "red";
+//error.style.color = "red";
 
 function enviarFormulario() {
-  console.log("Formulario Enviado");
   var expresion = /\w+@\w+\.+[a-z]/;
   var msgErro = [];
 
@@ -39,35 +38,47 @@ function enviarFormulario() {
 }
 
 ////////////////////////////////////REPOSITORIO///////////////////////////////////////////////////
-const cardSection = document.querySelector("card__section");
+
+var idGitHub = document.getElementById("idGitHub");
+var nomeGitHub = document.getElementById("nomeGitHub");
+var linkGitHub = document.getElementById("linkGitHub");
 
 function repositoriosGitHub() {
   fetch("https://api.github.com/users/guzmandp/repos")
     .then((response) => response.json())
     .then((data) => {
+      data.forEach((data) => {
+        idGitHub.innerHTML += "<p/>" + data.id;
+        nomeGitHub.innerHTML += "<p/>" + data.name;
+        linkGitHub.innerHTML += "<p/>" + data.html_url;
+      });
+
       console.log(data);
-      return cardSection;
-    });
+    })
+
+    .catch((e) => console.log("Erro:" + e));
 }
 
-function userGitHub() {
-  cardSection.innerHTML = `
-            <section class="box__section">
-            <div>
-                <img 
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGL44UakF8E7HxJ4uLZQFtflHc5vp8Tw4lZw&usqp=CAU" 
-                    alt="Fusce ultrices"
-                    class="img__cardBox"
-                    >
-            </div>
-            <div>
-                <h2 class="title__cardBox">${data.name}</h2>
-                <p class="text__cardBox">${data.clone_url}</p>
-            </div>
-        </section>
-
-
-            `;
+/* function createCard() {
+  card = `
+  <section class="box__section">
+  <div>
+      <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGL44UakF8E7HxJ4uLZQFtflHc5vp8Tw4lZw&usqp=CAU" 
+          alt="Fusce ultrices"
+          class="img__cardBox"
+          >
+  </div>
+  <div>
+      <h2 class="title__cardBox">${data.name}</h2>
+      <p class="text__cardBox">${data.clone_url}</p>
+  </div>
+  </section>`;
+  return card;
 }
+
+function Mostrar() {
+  cardSection.innerHTML = createCard();
+} */
 
 repositoriosGitHub();

@@ -43,24 +43,6 @@ nav a {
   padding: 0.5em 1.5em;
 }
 
-.btn__menu {
-  display: inline-block;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0.8px;
-  width: 180px;
-}
-
-.btn__menu:hover {
-  display: inline-block;
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 0.8px;
-  width: 180px;
-}
-
 nav a:hover {
   background-color: #fa8d0d;
   border-radius: 0.4em;
@@ -460,7 +442,7 @@ footer {
   color: #fa8d0d;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   nav {
     background: rgb(56, 54, 54) 0% 0% no-repeat padding-box;
     display: flex;
@@ -546,5 +528,197 @@ footer {
   }
 }
 
-@media (max-width: 598px) {
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+
+  .btn__menu {
+    display: none;
+  }
+
+  .experie {
+    padding-left: 10px;
+    height: 1150px;
+  }
+  .ano__experie {
+    padding: 10px;
+  }
+
+  .title__experie {
+    padding: 10px;
+  }
+
+  .text__experie {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .formacao {
+    padding-left: 20px;
+  }
+
+  .meus__dados {
+    height: 1000px;
+  }
+  .banner {
+    height: 12rem;
+  }
+  .foto {
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .absolut {
+    position: absolute;
+    top: 250px;
+    left: 8%;
+  }
+  .midias {
+    padding-left: 10%;
+  }
+  .midias img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .contata {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 328px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .meus__dados {
+    height: 1000px;
+  }
+
+  .meus__dados h2 {
+    font-size: 1rem;
+  }
+
+  .meus__dados h3 {
+    font-size: 0.8em;
+    color: #fff;
+  }
+
+  .div__meusDados p {
+    font-size: 0.8rem;
+  }
+
+  .formacao h2 {
+    font-size: 2.3rem;
+  }
+
+  .dados {
+    padding-left: 0;
+  }
+
+  .ano__formacao {
+    font-size: 0.8rem;
+  }
+
+  .title__formacao {
+    font-size: 1rem;
+  }
+
+  .text__formacao {
+    font-size: 0.8rem;
+  }
+
+  .experie {
+    padding-top: 20px;
+    padding-left: 0;
+    height: 1350px;
+  }
+  .ano__experie {
+    padding-top: 20px;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+
+  .title__experie {
+    padding-top: 20px;
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .text__experie {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 0.8rem;
+  }
+
+  .experie > h2 {
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+  .div-experie {
+    padding-top: 20px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 220px;
+  }
+
+  textarea {
+    width: 220px;
+    height: 83px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 298px;
+  }
+
+  button {
+    width: 100px;
+    padding-left: 12px;
+  }
+
+  .midias2 {
+    display: none;
+  }
+
+  .foto {
+    max-height: 90px;
+  }
+  .absolut {
+    position: absolute;
+    top: 250px;
+    left: 8%;
+  }
+  .midias {
+    padding-left: 10%;
+  }
+  .midias img {
+    width: 20px;
+    height: 20px;
+  }
+  .banner {
+    width: 100%;
+    height: 10rem;
+  }
+
+  .trabalhos h2 {
+    font-size: 2.3rem;
+  }
+
+  .trabalhos h2 {
+    font-size: 2.3rem;
+    padding-bottom: 3px;
+  }
 }
